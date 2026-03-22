@@ -67,18 +67,18 @@ export default function TemperatureChart({ forecast }) {
           </defs>
           <CartesianGrid
             strokeDasharray="3 3"
-            stroke="rgba(255,255,255,0.05)"
+            stroke="var(--chart-grid-color)"
             vertical={false}
           />
           <XAxis
             dataKey="label"
-            tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 9, fontFamily: 'Inter' }}
+            tick={{ fill: 'var(--chart-tick-color)', fontSize: 9, fontFamily: 'Inter' }}
             axisLine={false}
             tickLine={false}
           />
           <YAxis
             domain={[min, max]}
-            tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 9, fontFamily: 'Inter' }}
+            tick={{ fill: 'var(--chart-tick-color)', fontSize: 9, fontFamily: 'Inter' }}
             axisLine={false}
             tickLine={false}
           />

@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @layer base {
+  :root {
+    --chart-grid-color: rgba(255,255,255,0.05);
+    --chart-tick-color: rgba(255,255,255,0.3);
+  }
+
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -127,9 +132,10 @@
   -webkit-text-fill-color: transparent !important;
 }
 
-/* Recharts axis labels */
-[data-theme="light"] .recharts-cartesian-axis-tick text {
-  fill: rgba(15,23,42,0.45) !important;
+/* Recharts colors for light mode */
+[data-theme="light"] {
+  --chart-grid-color: rgba(0, 0, 0, 0.08);
+  --chart-tick-color: rgba(15, 23, 42, 0.45);
 }
 
 /* Leaflet map layer switcher text */
